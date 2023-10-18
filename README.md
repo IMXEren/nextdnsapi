@@ -56,12 +56,11 @@ This is an example of how to list things you need to use the software and how to
 
 * requests
 
-
-
 ##### Installation
 
-1. **```pip install nextdnsapi```**
+1. **```pip install "git+https://github.com/IMXEren/nextdnsapi.git"```**
 
+   The PyPI package (`pip install nextdnsapi`) is not maintained, thus provides an older version.
 2. Open your IDE
 3. Import library
 
@@ -76,7 +75,7 @@ from nextdnsapi import api
 from api import *
 ```
 
-1. Check [Github](https://github.com/rhijjawi/NextDNS-API) for Usage
+1. Check [Github](https://github.com/IMXEren/nextdnsapi) for Usage
 
 #### Usage
 
@@ -85,6 +84,7 @@ Usage is very easy, so I won't bother to go into the intricacies of the library,
 ##### Account
 
 For logging in using 2FA, see [2FA.md](2FA.md)
+
 ```python
 header = account.login("example@example.com", "password123")
 
